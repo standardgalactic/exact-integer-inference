@@ -1,0 +1,264 @@
+
+== environment ==
+date: 2026-11-08T10:22:26Z
+host: Linux 6.18.33.1-microsoft-standard-WSL2 x86_64
+gcc: gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+nvcc: Build cuda_13.3.r13.3/compiler.38244171_0
+gpu: NVIDIA GeForce RTX 5060, 610.88, 8151 MiB, 12.0
+python: Python 3.12.3
+
+== vector hashes ==
+vectors/model.bin: OK
+vectors/t128/exp_embed.i32: OK
+vectors/t128/exp_logits.i32: OK
+vectors/t128/exp_resid_out.i32: OK
+vectors/t128/ids.i64: OK
+vectors/t128/manifest.json: OK
+vectors/t160/exp_embed.i32: OK
+vectors/t160/exp_logits.i32: OK
+vectors/t160/exp_resid_out.i32: OK
+vectors/t160/ids.i64: OK
+vectors/t160/manifest.json: OK
+vectors/t24/exp_embed.i32: OK
+vectors/t24/exp_logits.i32: OK
+vectors/t24/exp_resid_out.i32: OK
+vectors/t24/ids.i64: OK
+vectors/t24/manifest.json: OK
+vectors match vectors.sha256
+
+== scalar C check ==
+make: Entering directory '~/exact-integer-inference/c'
+./intref ../vectors/t24 ../vectors
+layer  0: exact
+layer  1: exact
+layer  2: exact
+layer  3: exact
+layer  4: exact
+layer  5: exact
+layer  6: exact
+layer  7: exact
+layer  8: exact
+layer  9: exact
+layer 10: exact
+layer 11: exact
+layer 12: exact
+layer 13: exact
+layer 14: exact
+layer 15: exact
+layer 16: exact
+layer 17: exact
+layer 18: exact
+layer 19: exact
+layer 20: exact
+layer 21: exact
+layer 22: exact
+layer 23: exact
+layer 24: exact
+layer 25: exact
+layer 26: exact
+layer 27: exact
+layer 28: exact
+layer 29: exact
+logits: exact
+ALL STATES EXACT (24 tokens, 1.7 s)
+./intref ../vectors/t128 ../vectors
+layer  0: exact
+layer  1: exact
+layer  2: exact
+layer  3: exact
+layer  4: exact
+layer  5: exact
+layer  6: exact
+layer  7: exact
+layer  8: exact
+layer  9: exact
+layer 10: exact
+layer 11: exact
+layer 12: exact
+layer 13: exact
+layer 14: exact
+layer 15: exact
+layer 16: exact
+layer 17: exact
+layer 18: exact
+layer 19: exact
+layer 20: exact
+layer 21: exact
+layer 22: exact
+layer 23: exact
+layer 24: exact
+layer 25: exact
+layer 26: exact
+layer 27: exact
+layer 28: exact
+layer 29: exact
+logits: exact
+ALL STATES EXACT (128 tokens, 9.4 s)
+./intref ../vectors/t160 ../vectors
+layer  0: exact
+layer  1: exact
+layer  2: exact
+layer  3: exact
+layer  4: exact
+layer  5: exact
+layer  6: exact
+layer  7: exact
+layer  8: exact
+layer  9: exact
+layer 10: exact
+layer 11: exact
+layer 12: exact
+layer 13: exact
+layer 14: exact
+layer 15: exact
+layer 16: exact
+layer 17: exact
+layer 18: exact
+layer 19: exact
+layer 20: exact
+layer 21: exact
+layer 22: exact
+layer 23: exact
+layer 24: exact
+layer 25: exact
+layer 26: exact
+layer 27: exact
+layer 28: exact
+layer 29: exact
+logits: exact
+ALL STATES EXACT (160 tokens, 11.9 s)
+make: Leaving directory '~/exact-integer-inference/c'
+c: pass
+
+== CUDA check (make -C cuda check) ==
+make: Entering directory '~/exact-integer-inference/cuda'
+./intref_cuda ../vectors/t24 ../vectors
+device: NVIDIA GeForce RTX 5060 (sm_120, 8.0 GiB)
+layer  0: exact
+layer  1: exact
+layer  2: exact
+layer  3: exact
+layer  4: exact
+layer  5: exact
+layer  6: exact
+layer  7: exact
+layer  8: exact
+layer  9: exact
+layer 10: exact
+layer 11: exact
+layer 12: exact
+layer 13: exact
+layer 14: exact
+layer 15: exact
+layer 16: exact
+layer 17: exact
+layer 18: exact
+layer 19: exact
+layer 20: exact
+layer 21: exact
+layer 22: exact
+layer 23: exact
+layer 24: exact
+layer 25: exact
+layer 26: exact
+layer 27: exact
+layer 28: exact
+layer 29: exact
+logits: exact
+ALL STATES EXACT (24 tokens, 0.05 s on device incl. comparisons)
+./intref_cuda ../vectors/t128 ../vectors
+device: NVIDIA GeForce RTX 5060 (sm_120, 8.0 GiB)
+layer  0: exact
+layer  1: exact
+layer  2: exact
+layer  3: exact
+layer  4: exact
+layer  5: exact
+layer  6: exact
+layer  7: exact
+layer  8: exact
+layer  9: exact
+layer 10: exact
+layer 11: exact
+layer 12: exact
+layer 13: exact
+layer 14: exact
+layer 15: exact
+layer 16: exact
+layer 17: exact
+layer 18: exact
+layer 19: exact
+layer 20: exact
+layer 21: exact
+layer 22: exact
+layer 23: exact
+layer 24: exact
+layer 25: exact
+layer 26: exact
+layer 27: exact
+layer 28: exact
+layer 29: exact
+logits: exact
+ALL STATES EXACT (128 tokens, 0.21 s on device incl. comparisons)
+./intref_cuda ../vectors/t160 ../vectors
+device: NVIDIA GeForce RTX 5060 (sm_120, 8.0 GiB)
+layer  0: exact
+layer  1: exact
+layer  2: exact
+layer  3: exact
+layer  4: exact
+layer  5: exact
+layer  6: exact
+layer  7: exact
+layer  8: exact
+layer  9: exact
+layer 10: exact
+layer 11: exact
+layer 12: exact
+layer 13: exact
+layer 14: exact
+layer 15: exact
+layer 16: exact
+layer 17: exact
+layer 18: exact
+layer 19: exact
+layer 20: exact
+layer 21: exact
+layer 22: exact
+layer 23: exact
+layer 24: exact
+layer 25: exact
+layer 26: exact
+layer 27: exact
+layer 28: exact
+layer 29: exact
+logits: exact
+ALL STATES EXACT (160 tokens, 0.28 s on device incl. comparisons)
+make: Leaving directory '~/exact-integer-inference/cuda'
+cuda: pass
+exact lines: 6 (three expected, one per set)
+
+== CUDA negative test (one unit changed in t24 expected states) ==
+negative test: detected
+  MISMATCH resid_out  1 of 13824, first at 0 (got -199003 expected -199002)
+layer 15: DIFFERS
+
+== CUDA build variants ==
+cuda/intref.cu(222): warning #550-D: variable "f_g" was set but never used
+      int bits_h2 = fm[14], f_h2 = fm[15], bits_g = fm[16], f_g = fm[17], bits_u = fm[18], f_u = fm[19];
+                                                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+variant [-O0 -arch=native]: exact on t24 t128 t160
+cuda/intref.cu(222): warning #550-D: variable "f_g" was set but never used
+      int bits_h2 = fm[14], f_h2 = fm[15], bits_g = fm[16], f_g = fm[17], bits_u = fm[18], f_u = fm[19];
+                                                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+variant [-O3 -arch=sm_120]: exact on t24 t128 t160
+
+== result ==
+RECORD OK
+written to docs/conformance_runs/run-20261108-062226.txt

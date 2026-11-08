@@ -1,0 +1,35 @@
+{
+ "windows": 64,
+ "positions_with_massive_token": {
+  "0": 64,
+  "1": 2,
+  "2": 1
+ },
+ "non_first_position_cases": [
+  {
+   "window": 37,
+   "pos": 1,
+   "token_id": 33,
+   "token": "1",
+   "absmax": 20063.890625,
+   "prev": "1"
+  },
+  {
+   "window": 37,
+   "pos": 2,
+   "token_id": 33,
+   "token": "1",
+   "absmax": 20063.9296875,
+   "prev": "1"
+  },
+  {
+   "window": 59,
+   "pos": 1,
+   "token_id": 32,
+   "token": "0",
+   "absmax": 19600.46484375,
+   "prev": "0"
+  }
+ ],
+ "window_first_tokens_massive": 64
+}

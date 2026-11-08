@@ -1,0 +1,188 @@
+{
+  "windows": [
+    64,
+    79
+  ],
+  "weight_stats": {
+    "shape": [
+      49152,
+      576
+    ],
+    "global_max_abs": 1.984375,
+    "rms": 0.13466304540634155,
+    "row_max_abs_percentiles": {
+      "0": 0.28125,
+      "1": 0.349609375,
+      "10": 0.48046875,
+      "50": 0.6796875,
+      "90": 0.9140625,
+      "99": 1.25,
+      "100": 1.984375
+    },
+    "rows_all_zero_under_per_tensor_int8": 0,
+    "fraction_of_weights_rounding_to_zero_per_tensor_int8": 0.05582844838500023,
+    "fraction_of_weights_rounding_to_zero_per_row_int8": 0.019132085144519806,
+    "per_tensor_vs_per_row_weight_rmse": {
+      "per_tensor": 0.004521423950791359,
+      "per_row": 0.0016316750552505255
+    }
+  },
+  "role_experiments": {
+    "lookup_only_per_tensor": {
+      "kl_base_to_q": 0.000804182165683247,
+      "d_nll_sum": 7.540292063169318,
+      "tokens": 8176.0,
+      "top1_agree": 0.9879150390625,
+      "max_abs_logit_err": 1.9212636500597,
+      "mean_abs_logit_err": 0.08807421801611781,
+      "d_nll_per_token": 0.0009222470723054449
+    },
+    "lookup_only_per_row": {
+      "kl_base_to_q": 6.39850304075381e-05,
+      "d_nll_sum": -1.501985972222883,
+      "tokens": 8176.0,
+      "top1_agree": 0.9957275390625,
+      "max_abs_logit_err": 0.5726737082004547,
+      "mean_abs_logit_err": 0.02460355614311993,
+      "d_nll_per_token": -0.00018370669914663442
+    },
+    "head_only_per_tensor": {
+      "kl_base_to_q": 0.015836330140261236,
+      "d_nll_sum": 81.32103755268895,
+      "tokens": 8176.0,
+      "top1_agree": 0.90771484375,
+      "max_abs_logit_err": 1.0960385501384735,
+      "mean_abs_logit_err": 0.16592518519610167,
+      "d_nll_per_token": 0.009946310855270174
+    },
+    "head_only_per_row": {
+      "kl_base_to_q": 0.0008537708476116408,
+      "d_nll_sum": 1.6487569064304353,
+      "tokens": 8176.0,
+      "top1_agree": 0.9796142578125,
+      "max_abs_logit_err": 0.6845583319664001,
+      "mean_abs_logit_err": 0.05701943952590227,
+      "d_nll_per_token": 0.00020165813434814522
+    },
+    "both_per_tensor": {
+      "kl_base_to_q": 0.016449213057135863,
+      "d_nll_sum": 87.06540943192658,
+      "tokens": 8176.0,
+      "top1_agree": 0.9063720703125,
+      "max_abs_logit_err": 2.1806707084178925,
+      "mean_abs_logit_err": 0.19186003226786852,
+      "d_nll_per_token": 0.010648900370832508
+    },
+    "both_per_row": {
+      "kl_base_to_q": 0.0009144627277030443,
+      "d_nll_sum": 0.11500365228425835,
+      "tokens": 8176.0,
+      "top1_agree": 0.9801025390625,
+      "max_abs_logit_err": 0.872624397277832,
+      "mean_abs_logit_err": 0.0635230562184006,
+      "d_nll_per_token": 1.4066004437898527e-05
+    }
+  },
+  "final_hidden_int16_fractional_bits": {
+    "4": {
+      "kl_base_to_q": 0.0006284434382787478,
+      "d_nll_sum": -2.997243188329776,
+      "tokens": 8176.0,
+      "top1_agree": 0.9822998046875,
+      "max_abs_logit_err": 0.4656611531972885,
+      "mean_abs_logit_err": 0.04558963165618479,
+      "clipped_values": 0.0,
+      "d_nll_per_token": -0.00036659040953152834
+    },
+    "5": {
+      "kl_base_to_q": 0.00015621682758467953,
+      "d_nll_sum": 1.0239216609613777,
+      "tokens": 8176.0,
+      "top1_agree": 0.9915771484375,
+      "max_abs_logit_err": 0.23340663313865662,
+      "mean_abs_logit_err": 0.022868423024192452,
+      "clipped_values": 0.0,
+      "d_nll_per_token": 0.00012523503681034464
+    },
+    "6": {
+      "kl_base_to_q": 3.934747781978312e-05,
+      "d_nll_sum": 1.1361484615199515,
+      "tokens": 8176.0,
+      "top1_agree": 0.9959716796875,
+      "max_abs_logit_err": 0.11361663043498993,
+      "mean_abs_logit_err": 0.011461064859759063,
+      "clipped_values": 0.0,
+      "d_nll_per_token": 0.00013896140674167704
+    },
+    "7": {
+      "kl_base_to_q": 9.93126632590271e-06,
+      "d_nll_sum": -0.025888298383733854,
+      "tokens": 8176.0,
+      "top1_agree": 0.99755859375,
+      "max_abs_logit_err": 0.05713152885437012,
+      "mean_abs_logit_err": 0.005744393187342212,
+      "clipped_values": 0.0,
+      "d_nll_per_token": -3.1663770038813424e-06
+    },
+    "8": {
+      "kl_base_to_q": 2.4457975172958243e-06,
+      "d_nll_sum": -0.03431069382736496,
+      "tokens": 8176.0,
+      "top1_agree": 0.9991455078125,
+      "max_abs_logit_err": 0.02860875427722931,
+      "mean_abs_logit_err": 0.0028668410086538643,
+      "clipped_values": 0.0,
+      "d_nll_per_token": -4.1965134328968885e-06
+    },
+    "9": {
+      "kl_base_to_q": 6.094893383965185e-07,
+      "d_nll_sum": 0.0481263189103629,
+      "tokens": 8176.0,
+      "top1_agree": 0.999267578125,
+      "max_abs_logit_err": 0.014536112546920776,
+      "mean_abs_logit_err": 0.0014264491328503937,
+      "clipped_values": 0.0,
+      "d_nll_per_token": 5.886291451854562e-06
+    },
+    "10": {
+      "kl_base_to_q": 0.0021972734963545343,
+      "d_nll_sum": -7.6776899024987415,
+      "tokens": 8176.0,
+      "top1_agree": 0.9947509765625,
+      "max_abs_logit_err": 9.904033720493317,
+      "mean_abs_logit_err": 0.18775083869695663,
+      "clipped_values": 911.0,
+      "d_nll_per_token": -0.0009390520917928989
+    },
+    "11": {
+      "kl_base_to_q": 0.17382770921474033,
+      "d_nll_sum": 1238.1312629876545,
+      "tokens": 8176.0,
+      "top1_agree": 0.818115234375,
+      "max_abs_logit_err": 20.50470757484436,
+      "mean_abs_logit_err": 2.025000222027302,
+      "clipped_values": 12411.0,
+      "d_nll_per_token": 0.15143484136346066
+    },
+    "12": {
+      "kl_base_to_q": 1.3454059071164752,
+      "d_nll_sum": 10550.573501767045,
+      "tokens": 8176.0,
+      "top1_agree": 0.5096435546875,
+      "max_abs_logit_err": 30.365314722061157,
+      "mean_abs_logit_err": 3.8278163075447083,
+      "clipped_values": 38107.0,
+      "d_nll_per_token": 1.290432179766028
+    },
+    "13": {
+      "kl_base_to_q": 3.4646659951289474,
+      "d_nll_sum": 27766.11358603785,
+      "tokens": 8176.0,
+      "top1_agree": 0.312255859375,
+      "max_abs_logit_err": 36.344040393829346,
+      "mean_abs_logit_err": 5.10525244474411,
+      "clipped_values": 100657.0,
+      "d_nll_per_token": 3.39605107461324
+    }
+  }
+}

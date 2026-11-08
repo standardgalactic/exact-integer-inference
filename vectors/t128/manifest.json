@@ -1,0 +1,26 @@
+{
+ "window": 64,
+ "tokens": 128,
+ "files": {
+  "exp_embed.i32": {
+   "bytes": 294912,
+   "sha256": "65f0ffcff0cf5794536811a608c10e217c29ced59605401d9b556735fa42f67c"
+  },
+  "exp_logits.i32": {
+   "bytes": 25165824,
+   "sha256": "349f204403e022820c921814ec599fa9960bb6a0c2cb259f471f3e1c1070e8fc"
+  },
+  "exp_resid_out.i32": {
+   "bytes": 8847360,
+   "sha256": "5e26f81015222a331d09baa92fa56405481b92f9c625d0a8204341a026e2a118"
+  },
+  "ids.i64": {
+   "bytes": 1024,
+   "sha256": "9828264b26cfe025353b058ceb2d71caf4a5937830df4562c315fb4011c173dd"
+  },
+  "model.bin": {
+   "bytes": 154045048,
+   "sha256": "42fdecd52d9b5dbd3b8ed6e4e31f18c77f4fd76717076fc74413afb6bf2a055e"
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+  "tag": "val",
+  "windows": [
+    64,
+    127
+  ],
+  "ids_sha256": "bee20bc674370b6a81e018f9cf33e506539981e0bef6377da7eae6f7d338f48c",
+  "profile_digest": "5596da87e20d6757a3223bc2202f40bac86c5fe5ea841991952301d3b81046b1",
+  "float_nll_per_token": 3.0394109173378103,
+  "float_perplexity": 20.89293194529381,
+  "tokens_scored": 32704,
+  "sites": 876,
+  "seconds": 1103.6652038097382
+}

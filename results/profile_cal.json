@@ -1,0 +1,14 @@
+{
+  "tag": "cal",
+  "windows": [
+    0,
+    63
+  ],
+  "ids_sha256": "7a2305cc63d0347363310625b191b24fd610d78272a71494e5c5b148ccbaa9dd",
+  "profile_digest": "716962896a3f4a605defe67de55c02378c9e82e931f202d7291f07121474ccca",
+  "float_nll_per_token": 3.0065089344633327,
+  "float_perplexity": 20.216698765530445,
+  "tokens_scored": 32704,
+  "sites": 876,
+  "seconds": 1102.8775107860565
+}
